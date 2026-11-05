@@ -9,12 +9,12 @@ recebimento de mercadoria.
 
 ## 1. Integrantes
 
-| Nome                       | Matrícula |
-|----------------------------|---|
-| Pedro Henrique Faria Silva | _preencher_ |
-| Raphael Antônio            | _preencher_ |
+|            Nome            | Matrícula |
 
-## 2. Temas sorteados
+| Pedro Henrique Faria Silva | 232-000281 |
+| Raphael Antônio Ferreira   | 241-006886 |
+
+## 2. Temas
 
 - **Tema 1 – Robô de serviço:** desloca-se pelo ambiente, movimenta braços articulados e
   recebe uma encomenda, coordenando-se com o caminhão.
@@ -45,7 +45,7 @@ quando a sua ação é concluída, e o próximo estado depende disso. O nome da 
 no título da janela e no console.
 
 | Etapa | Estado | O que acontece | Depende de |
-|---|---|---|---|
+
 | 1 | `INICIO` | cena parada; robô aguarda na base | — |
 | 2 | `CAMINHAO_DESLOCANDO` | caminhão acelera até 4,5 u/s; rodas giram | início |
 | 2 | `CAMINHAO_FREANDO` | desaceleração constante (v = √(2·a·d)); semáforo amarelo | distância à vaga |
@@ -92,7 +92,6 @@ As texturas já estão em `assets/textures/`. Para gerá-las novamente:
 ## 7. Controles
 
 | Tecla | Ação |
-|---|---|
 | W / S | câmera para frente / para trás |
 | A / D | câmera para a esquerda / direita |
 | R / F | câmera sobe / desce |
@@ -129,7 +128,7 @@ ComputacaoGrafica_3Etapa/
 > Os shaders GLSL ficam embutidos nas classes de material (em strings), como no livro;
 > por isso não existe uma pasta `shaders/` separada.
 
-## 9. Onde está cada recurso gráfico
+## 9. recurso gráfico
 
 | Requisito | Arquivo → classe / função |
 |---|---|
@@ -264,6 +263,4 @@ Todas as imagens em `assets/textures/` são **procedurais** e foram geradas pelo
   de texturas), diagnóstico de desempenho e redação deste README.
 - **Trechos produzidos ou revisados com auxílio da IA:** todos os arquivos `.py` do projeto e
   este README, na versão inicial.
-- **Revisão humana:** _descrever aqui o que a dupla revisou, testou e alterou_. Os dois integrantes
-  precisam compreender o código para explicar shaders, uniforms, hierarquia, animação e Shadow
-  Mapping na apresentação.
+- **Revisão humana:** Foi revisada toda arquitetura do projeto, classes, parâmetros, fizemos testes manuais em cada etapa do processo pra identificar alguns erros que estava ocorrendo com cada elemento, tinha vez que o caminhão atrasava muito pra chegar no mesmo tempo que o robô ou vice e versa, na hora do robô pegar caixa tinha vez que não estava na direção correta e ele só esticava o braço mas acabava que não pegava em nada.
